@@ -1,0 +1,51 @@
+components:
+- layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- components:
+  - name: button_5_copy
+    properties: {background: 'theme:Secondary', enabled: true, foreground: 'theme:On Primary', text: Sign up/ Sign in, visible: true}
+    type: Button
+  layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - layout_properties: {grid_position: 'XUCRFP,DIWKNT'}
+    name: label_1
+    properties: {text: Browse LifeLink}
+    type: Label
+  - layout_properties: {grid_position: 'TTFDZB,NBNIPI'}
+    name: button_1
+    properties: {text: Donors}
+    type: Button
+  - layout_properties: {grid_position: 'UBRDEG,PULNWJ'}
+    name: button_2
+    properties: {text: Recipients}
+    type: Button
+  - layout_properties: {grid_position: 'RTDUOA,HMQLZR'}
+    name: button_3
+    properties: {text: Hospitals}
+    type: Button
+  - layout_properties: {grid_position: 'SSASTM,FTRRKB'}
+    name: button_4
+    properties: {text: Bloodbanks}
+    type: Button
+  - event_bindings: {click: button_6_click}
+    layout_properties: {grid_position: 'NNTWAY,IJHBAB'}
+    name: button_6
+    properties: {text: Homepage}
+    type: Button
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: title}
+  name: button_5
+  properties: {background: 'theme:Primary', foreground: 'theme:On Primary', text: Hospitals}
+  type: Button
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
