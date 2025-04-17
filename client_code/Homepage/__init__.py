@@ -23,7 +23,7 @@ class Homepage(HomepageTemplate):
       open_form('Homepage')
     
   def button_3_click(self,**event_args):
-    open_form('Form3')
+    open_form('Hospitals')
 
   def button_7_click(self, **event_args):
     anvil.users.logout()
