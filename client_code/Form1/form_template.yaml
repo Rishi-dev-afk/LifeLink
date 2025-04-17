@@ -1,13 +1,8 @@
 components:
-- components: []
-  layout_properties: {slot: default}
-  name: content_panel
-  properties: {col_widths: '{}'}
-  type: ColumnPanel
-- layout_properties: {slot: nav-right}
-  name: navbar_links
+- layout_properties: {slot: left-nav}
+  name: column_panel_1
   properties: {}
-  type: FlowPanel
+  type: ColumnPanel
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate
