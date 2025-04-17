@@ -12,7 +12,8 @@ components:
     name: button_2
     properties: {text: Recipients}
     type: Button
-  - layout_properties: {grid_position: 'KFWRJZ,JTECAV'}
+  - event_bindings: {click: button_3_click}
+    layout_properties: {grid_position: 'KFWRJZ,JTECAV'}
     name: button_3
     properties: {text: Hospitals}
     type: Button
