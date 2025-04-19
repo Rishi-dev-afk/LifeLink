@@ -3,7 +3,12 @@ components:
   name: content_panel
   properties: {}
   type: ColumnPanel
-- layout_properties: {slot: nav-right}
+- components:
+  - event_bindings: {click: button_5_click}
+    name: button_7
+    properties: {background: 'theme:Secondary', enabled: true, foreground: 'theme:On Primary', text: Sign up/ Sign in, visible: true}
+    type: Button
+  layout_properties: {slot: nav-right}
   name: navbar_links
   properties: {}
   type: FlowPanel
@@ -40,6 +45,10 @@ components:
   name: column_panel_1
   properties: {}
   type: ColumnPanel
+- layout_properties: {slot: title}
+  name: button_8
+  properties: {background: 'theme:Primary', foreground: 'theme:On Primary', text: Donors}
+  type: Button
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate

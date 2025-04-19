@@ -13,5 +13,11 @@ class Donors(DonorsTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    if anvil.users.get_user():
+      self.button_7.visible = False
 
     # Any code you write here will run before the form opens.
+  def button_6_click(self, **event_args):
+    anvil.users.logout()
+    self.button_7.visible = True
+    self.button_6.visible = False
