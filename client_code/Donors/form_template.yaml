@@ -1,0 +1,46 @@
+components:
+- layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - layout_properties: {grid_position: 'CUTTVB,AGHJAS'}
+    name: label_2
+    properties: {foreground: '#075f50', text: Browse LifeLink, underline: true}
+    type: Label
+  - layout_properties: {grid_position: 'DNKCRS,ISTRBK'}
+    name: button_1
+    properties: {text: Homepage}
+    type: Button
+  - layout_properties: {grid_position: 'FYMPXD,GJJECJ'}
+    name: button_2
+    properties: {text: Donors}
+    type: Button
+  - layout_properties: {grid_position: 'HTTQFA,AXHGFR'}
+    name: button_3
+    properties: {text: Recipients}
+    type: Button
+  - layout_properties: {grid_position: 'GQSXCQ,SNDGYK'}
+    name: button_4
+    properties: {text: Hospitals}
+    type: Button
+  - layout_properties: {grid_position: 'TQENRG,CCCMNY'}
+    name: button_5
+    properties: {text: Bloodbanks}
+    type: Button
+  - layout_properties: {grid_position: 'ZRTTTX,IQRKJG'}
+    name: button_6
+    properties: {text: Logout}
+    type: Button
+  layout_properties: {slot: left-nav}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
