@@ -1,5 +1,29 @@
 allow_embedding: false
 db_schema:
+  donors:
+    client: full
+    columns:
+    - admin_ui: {order: 0, width: 200}
+      name: User
+      target: users
+      type: link_single
+    - admin_ui: {order: 1, width: 200}
+      name: Name
+      type: string
+    - admin_ui: {order: 2, width: 200}
+      name: Blood_Group
+      type: string
+    - admin_ui: {order: 3, width: 200}
+      name: Contact
+      type: string
+    - admin_ui: {order: 4, width: 200}
+      name: Location
+      type: string
+    - admin_ui: {order: 5, width: 200}
+      name: Last_donation
+      type: date
+    server: full
+    title: Table 2
   users:
     client: none
     columns:

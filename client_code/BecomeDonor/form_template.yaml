@@ -1,0 +1,65 @@
+components:
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- components:
+  - layout_properties: {col_xs: 0, row: RAPRCO, width_xs: 2}
+    name: label_1
+    properties: {align: center, border: solid, text: 'Name:'}
+    type: Label
+  - event_bindings: {pressed_enter: text_box_1_pressed_enter}
+    layout_properties: {col_xs: 2, row: RAPRCO, width_xs: 8}
+    name: text_box_1
+    properties: {background: 'theme:On Primary', border: solid}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: WQIWNZ, width_xs: 2}
+    name: label_2
+    properties: {align: center, border: solid, text: 'Blood Group:'}
+    type: Label
+  - layout_properties: {col_xs: 2, row: WQIWNZ, width_xs: 8}
+    name: drop_down_1
+    properties:
+      items: [A+, A-, B+, B-, AB+, AB-, O+, O-]
+    type: DropDown
+  - layout_properties: {col_xs: 0, row: ISNLUY, width_xs: 2}
+    name: label_3
+    properties: {align: center, border: solid, text: 'Contact:'}
+    type: Label
+  - layout_properties: {col_xs: 2, row: ISNLUY, width_xs: 8}
+    name: text_box_3
+    properties: {background: 'theme:On Primary', border: solid}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: XHZSCZ, width_xs: 2}
+    name: label_4
+    properties: {align: center, border: solid, text: 'Location:'}
+    type: Label
+  - layout_properties: {col_xs: 2, row: XHZSCZ, width_xs: 8}
+    name: text_box_4
+    properties: {background: 'theme:On Primary', border: solid}
+    type: TextBox
+  - layout_properties: {col_xs: 0, row: YABEOU, width_xs: 2}
+    name: label_4_copy
+    properties: {align: center, border: solid, text: 'Last Donation:'}
+    type: Label
+  - layout_properties: {col_xs: 2, row: YABEOU, width_xs: 8}
+    name: date_picker_1
+    properties: {}
+    type: DatePicker
+  - event_bindings: {click: button_1_click}
+    layout_properties: {col_xs: 8, row: HSTAIA, width_xs: 4}
+    name: button_1
+    properties: {background: 'theme:Primary', foreground: 'theme:On Primary', text: Submit}
+    type: Button
+  layout_properties: {slot: default}
+  name: grid_panel_1
+  properties: {}
+  type: GridPanel
+- layout_properties: {slot: title}
+  name: button_2
+  properties: {background: 'theme:Primary', foreground: 'theme:On Primary', text: 'Back '}
+  type: Button
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
