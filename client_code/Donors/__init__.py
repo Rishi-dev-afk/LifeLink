@@ -21,3 +21,11 @@ class Donors(DonorsTemplate):
     anvil.users.logout()
     self.button_7.visible = True
     self.button_6.visible = False
+
+  def button_7_click(self, **event_args):
+    pass
+
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+
