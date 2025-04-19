@@ -4,7 +4,7 @@ components:
   properties: {}
   type: ColumnPanel
 - components:
-  - event_bindings: {click: button_5_click}
+  - event_bindings: {click: signup_signin_click}
     name: signup_signin
     properties: {background: 'theme:Secondary', enabled: true, foreground: 'theme:On Primary', text: Sign up/ Sign in, visible: true}
     type: Button
@@ -38,8 +38,9 @@ components:
     name: button_5
     properties: {text: Bloodbanks}
     type: Button
-  - layout_properties: {grid_position: 'ZRTTTX,IQRKJG'}
-    name: button_6
+  - event_bindings: {click: Logout_click}
+    layout_properties: {grid_position: 'ZRTTTX,IQRKJG'}
+    name: Logout
     properties: {text: Logout}
     type: Button
   layout_properties: {slot: left-nav}

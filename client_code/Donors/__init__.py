@@ -14,18 +14,18 @@ class Donors(DonorsTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     if anvil.users.get_user():
-      self.button_7.visible = False
+      self.signup_signin.visible = False
 
     # Any code you write here will run before the form opens.
-  def button_6_click(self, **event_args):
+  def Logout_click(self, **event_args):
     anvil.users.logout()
-    self.button_7.visible = True
+    self.signup_signin.visible = True
     self.button_6.visible = False
 
-  def button_7_click(self, **event_args):
-    pass
 
-  def button_5_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    pass
+  def signup_signin_click(self, **event_args):
+    user = anvil.users.login_with_form(show_signup_option=True ,allow_cancel=True)
+    if user:
+      open_form('Donors')
+   
 

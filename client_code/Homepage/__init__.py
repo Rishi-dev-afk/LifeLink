@@ -30,5 +30,5 @@ class Homepage(HomepageTemplate):
     self.button_5.visible = True
     self.button_7.visible = False
     
-  def button_1_click(self,**event_args):
+  def Donors_click(self,**event_args):
     open_form('Donors')

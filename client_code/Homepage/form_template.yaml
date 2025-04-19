@@ -4,9 +4,9 @@ components:
     name: label_2
     properties: {foreground: '#075f50', text: Browse LifeLink, underline: true}
     type: Label
-  - event_bindings: {click: button_1_click}
+  - event_bindings: {click: Donors_click}
     layout_properties: {grid_position: 'UXSDLN,HUBIUR'}
-    name: button_1
+    name: Donors
     properties: {text: Donors}
     type: Button
   - layout_properties: {grid_position: 'HDTFDN,XDZLOI'}

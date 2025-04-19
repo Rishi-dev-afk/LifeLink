@@ -18,7 +18,7 @@ class Hospitals(HospitalsTemplate):
 
     # Any code you write here will run before the form opens.
 
-  def button_6_click(self, **event_args):
+  def Homepage_click(self, **event_args):
     open_form('Homepage')
 
   def button_5_click(self, **event_args):
@@ -30,4 +30,9 @@ class Hospitals(HospitalsTemplate):
     anvil.users.logout()
     self.button_5.visible = True
     self.button_7.visible = False
+
+  def Donors_click(self,**event_args):
+    open_form('Donors')
+
+ 
   
