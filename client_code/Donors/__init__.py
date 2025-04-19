@@ -17,6 +17,7 @@ class Donors(DonorsTemplate):
       self.signup_signin.visible = False
     if anvil.users.get_user() is None:
       self.Donate_Blood.visible = False
+      self.Logout.visible = False
     user = anvil.users.get_user()
     if user is not None:
       donor = app_tables.donors.get(User=user)
@@ -28,13 +29,15 @@ class Donors(DonorsTemplate):
         self.Name.text = donor['Name']
       else:
         self.Name.text = "Not registered as Donor"
+    else:
+        self.Name.text = "Not registered as Donor"
         
 
     # Any code you write here will run before the form opens.
   def Logout_click(self, **event_args):
     anvil.users.logout()
     self.signup_signin.visible = True
-    self.Logout.visible = False
+    open_form('Donors')
 
 
   def signup_signin_click(self, **event_args):
