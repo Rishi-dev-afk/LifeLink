@@ -34,6 +34,9 @@ class BecomeDonor(BecomeDonorTemplate):
     alert("Your details have been saved sucessfully")
     open_form('Donors')
 
+  def Back_click(self, **event_args):
+    open_form('Donors')
+
     
     
 
