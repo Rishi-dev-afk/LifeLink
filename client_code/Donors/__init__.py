@@ -27,6 +27,7 @@ class Donors(DonorsTemplate):
       donor = app_tables.donors.get(User=user)
       if donor:
         self.Name.text = donor['Name']
+        self.Blood_Group.text = donor['Blood_Group']
       else:
         self.Name.text = "Not registered as Donor"
     else:
