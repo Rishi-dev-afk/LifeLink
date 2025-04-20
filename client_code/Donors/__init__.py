@@ -18,6 +18,11 @@ class Donors(DonorsTemplate):
     if anvil.users.get_user() is None:
       self.Donate_Blood.visible = False
       self.Logout.visible = False
+      self.label_1.visible = False
+      self.label_3.visible = False
+      self.label_4.visible = False
+      self.label_5.visible = False
+      self.label_6.visible = False
     user = anvil.users.get_user()
     if user is not None:
       donor = app_tables.donors.get(User=user)
@@ -28,8 +33,16 @@ class Donors(DonorsTemplate):
       if donor:
         self.Name.text = donor['Name']
         self.Blood_Group.text = donor['Blood_Group']
+        self.Contact.text = donor['Contact']
+        self.Location.text = donor['Location']
+        self.Last_Donation.text = donor['Last_donation']
       else:
         self.Name.text = "Not registered as Donor"
+        self.label_1.visible = False
+        self.label_3.visible = False
+        self.label_4.visible = False
+        self.label_5.visible = False
+        self.label_6.visible = False
     else:
         self.Name.text = "Not registered as Donor"
         
