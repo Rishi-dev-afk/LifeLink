@@ -65,6 +65,9 @@ class Donors(DonorsTemplate):
   def Donate_Blood_click(self, **event_args):
     open_form('BecomeDonor')
 
+  def Find_a_donor_click(self, **event_args):
+    open_form('FindDonor')
+
 
    
 

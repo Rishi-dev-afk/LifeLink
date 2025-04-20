@@ -1,0 +1,9 @@
+components:
+- data_bindings:
+  - {code: 'f"{self.item[''Blood_Group'']}-{self.item[''Location'']}"', property: text, writeback: false}
+  layout_properties: {grid_position: 'APFFXV,NUQMPQ'}
+  name: label_1
+  properties: {text: ''}
+  type: Label
+container: {type: ColumnPanel}
+is_package: true

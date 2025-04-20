@@ -18,3 +18,9 @@ import anvil.server
 #   print("Hello, " + name + "!")
 #   return 42
 #
+@anvil.server.callable
+def find_donors(blood_group, location):
+    return app_tables.donors.search(
+        Blood_Group=blood_group,
+        Location=location,
+    )
